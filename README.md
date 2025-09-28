@@ -1,4 +1,4 @@
-# Walmart Sales Analysis & Power BI Dashboard
+# Retail Sales Analysis & Visualization using Power BI
 
 ## Project Overview
 
@@ -15,14 +15,14 @@ The goal is to **clean the dataset, explore patterns, visualize key insights, an
 
 ## Workflow
 
-### 1️⃣ Data Cleaning
+### 1️ Data Cleaning
 
 * Fixed missing values in numerical columns (Temperature, Fuel Price, CPI, Unemployment).
 * Converted `Date` column to proper datetime format.
 * Created new time-based columns: `Year`, `Month`.
 * Removed duplicates and handled outliers where needed.
 
-### 2️⃣ Data Exploration (EDA)
+### 2️ Data Exploration (EDA)
 
 * Analyzed **total weekly sales trend** over time.
 * Identified **Top 10 stores** with highest average weekly sales.
@@ -30,14 +30,14 @@ The goal is to **clean the dataset, explore patterns, visualize key insights, an
 * Studied **top months and seasonal sales trends**.
 * Checked **correlation** between economic factors (Fuel Price, CPI, Unemployment) and sales.
 
-### 3️⃣ Visualization (Python)
+### 3️ Visualization (Python)
 
 * **Line Chart:** Sales trend over time.
 * **Bar Charts:** Top stores and top months.
 * **Boxplot:** Holiday vs Non-Holiday sales.
 * **Heatmap:** Correlation between sales and economic factors.
 
-### 4️⃣ Power BI Dashboard
+### 4️ Power BI Dashboard
 
 * KPI Cards: Total Sales, Average Weekly Sales, Total Stores, Total Months.
 * Line Chart: Weekly Sales over time.
@@ -57,25 +57,23 @@ The goal is to **clean the dataset, explore patterns, visualize key insights, an
 ## Folder Structure
 
 ```
-walmart-sales-project/
-│─ data/
-│   └─ walmart.csv                # Original dataset from Kaggle
+Retail-Sales-Analysis-and-Visualization-using-Power-BI/
+│─ Datasets/
+│   ├─ walmart.csv                  # Original dataset from Kaggle
+│   └─ walmart_cleaned.csv            # Cleaned dataset for Power BI
 │─ notebooks/
-│   └─ 01-clean-eda.ipynb        # Python notebook for cleaning & visualization
-│─ outputs/
-│   └─ walmart_cleaned.csv        # Cleaned dataset for Power BI
-│─ powerbi/
-│   └─ walmart_dashboard.pbix     # Power BI dashboard file
-│─ README.md                      # Project overview
+│   └─ Retail_Sales_Analysis.ipynb  # Python notebook for cleaning & visualization
+│─ walmart_sales_dashboard.pbit     # Power BI dashboard template
+│─ README.md                        # Project overview
 ```
 
 ## How to Run
 
-1. Download `walmart.csv` from Kaggle and place it in the `data/` folder.
-2. Open `01-clean-eda.ipynb` in Jupyter Notebook and run all cells to perform cleaning and visualizations.
-3. The cleaned dataset will be saved as `outputs/walmart_cleaned.csv`.
+1. Place `walmart.csv` in the `Datasets/` folder.
+2. Open `Retail_Sales_Analysis.ipynb` in Jupyter Notebook and run all cells to perform cleaning and visualizations.
+3. The cleaned dataset will be saved as `Datasets/walmart_cleaned.csv`.
 4. Open Power BI Desktop → Get Data → Import `walmart_cleaned.csv`.
-5. Build visuals as described in the workflow.
+5. Use the `walmart_sales_dashboard.pbit` template to build and explore the dashboard.
 
 ## Skills & Tools Demonstrated
 
